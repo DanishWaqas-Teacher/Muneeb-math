@@ -1,185 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muneeb Ur Rehman - Mathematics Teacher</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f4f8;
-        }
-
-        header {
-            background-color: #FFEB3B; /* Yellow color */
-            color: white;
-            text-align: center;
-            padding: 80px 0;
-        }
-
-        header h1 {
-            font-size: 3.5em;
-            margin: 0;
-            font-weight: 600;
-        }
-
-        header p {
-            font-size: 1.5em;
-            margin-top: 10px;
-        }
-
-        .hero-section {
-            display: flex;
-            justify-content: space-between;
-            padding: 100px 5%;
-            background-color: #ffffff;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .hero-section img {
-            width: 45%;
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-        }
-
-        .hero-content {
-            width: 50%;
-        }
-
-        .hero-content h2 {
-            font-size: 2.5em;
-            color: #333;
-            font-weight: 700;
-        }
-
-        .hero-content p {
-            font-size: 1.2em;
-            color: #555;
-            line-height: 1.6;
-            margin-top: 20px;
-        }
-
-        .cta-btn {
-            background-color: #FFEB3B; /* Yellow color */
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            margin-top: 30px;
-        }
-
-        .cta-btn:hover {
-            background-color: #FFCA28; /* Slightly darker yellow */
-        }
-
-        .courses-section {
-            display: flex;
-            justify-content: space-around;
-            padding: 60px 5%;
-            background-color: #f7f7f7;
-        }
-
-        .course-card {
-            background-color: white;
-            padding: 30px;
-            text-align: center;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 30%;
-        }
-
-        .course-card h3 {
-            font-size: 1.8em;
-            color: #333;
-            font-weight: 600;
-        }
-
-        .course-card p {
-            font-size: 1.1em;
-            color: #666;
-        }
-
-        .social-media {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-
-        .social-media a {
-            text-decoration: none;
-            font-size: 1.5em;
-            color: #333;
-        }
-
-        .social-media a:hover {
-            color: #FFEB3B; /* Yellow color */
-        }
-
-        footer {
-            background-color: #FFEB3B; /* Yellow color */
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        footer a {
-            color: #333;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muneeb Ur Rehman - Mathematics Teacher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #FFEB3B;
+      padding: 20px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 2em;
+      margin: 0;
+    }
+    .top-buttons {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+    .top-buttons a {
+      text-decoration: none;
+      background-color: #3F51B5;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-weight: 500;
+    }
+    .top-buttons a:hover {
+      background-color: #303F9F;
+    }
+    .social-icons {
+      display: flex;
+      gap: 10px;
+    }
+    .social-icons a {
+      color: #333;
+      font-size: 1.4em;
+    }
+    .social-icons a:hover {
+      color: #3F51B5;
+    }
+    .courses-section {
+      padding: 40px 5%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-around;
+    }
+    .course-card {
+      flex: 0 0 30%;
+      background-color: #fff;
+      border-left: 6px solid #FFEB3B;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .course-card:hover {
+      transform: translateY(-5px);
+    }
+    .course-card i {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #3F51B5;
+    }
+    .course-card h3 {
+      margin: 10px 0;
+      font-size: 1.5em;
+    }
+    .course-card p {
+      color: #555;
+    }
+    footer {
+      background-color: #3F51B5;
+      color: white;
+      text-align: center;
+      padding: 20px 5%;
+    }
+  </style>
 </head>
 <body>
-
-<header>
+  <header>
     <h1>Muneeb Ur Rehman</h1>
-    <p>Online Mathematics Teacher</p>
-</header>
-
-<section class="hero-section">
-    <div class="hero-content">
-        <h2>Learn Mathematics from an Expert</h2>
-        <p>Join me for personalized online math lessons that will help you understand complex concepts in simple ways. Whether you’re preparing for exams or looking to improve your skills, I’m here to guide you every step of the way.</p>
-        <a href="#courses" class="cta-btn">Explore Courses</a>
+    <div class="top-buttons">
+      <div class="social-icons">
+        <a href="mailto:contactmuneeb247@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.facebook.com/share/15g8ek713d/" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/03360524619" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://youtube.com/@m.uneeb019?si=oaBpNJm8ApEjBctA" title="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+      <a href="#login">Login</a>
+      <a href="#signup">Sign Up</a>
     </div>
-    <!-- Replace with your own image -->
-    <img src="https://via.placeholder.com/400x600?text=Male+Teacher" alt="Male Teacher">
-</section>
-
-<section class="courses-section" id="courses">
-    <div class="course-card">
-        <h3>Algebra</h3>
-        <p>Learn the fundamentals of algebra with personalized lessons designed to help you master the subject.</p>
+  </header>  <section class="courses-section">
+    <div class="course-card" style="border-left-color: #FFEB3B;">
+      <i class="fas fa-square-root-alt"></i>
+      <h3>Algebra Basics</h3>
+      <p>Master variables, equations, and expressions with easy examples.</p>
     </div>
-    <div class="course-card">
-        <h3>Calculus</h3>
-        <p>Understand calculus concepts with clear explanations and step-by-step solutions for better comprehension.</p>
+    <div class="course-card" style="border-left-color: #4CAF50;">
+      <i class="fas fa-calculator"></i>
+      <h3>Calculus Intro</h3>
+      <p>Understand limits, derivatives, and integrals with visual guides.</p>
     </div>
-    <div class="course-card">
-        <h3>Geometry</h3>
-        <p>Master the principles of geometry with easy-to-understand lessons and real-world applications.</p>
+    <div class="course-card" style="border-left-color: #F44336;">
+      <i class="fas fa-drafting-compass"></i>
+      <h3>Geometry</h3>
+      <p>Explore shapes, angles, and theorems with simple visuals.</p>
     </div>
-</section>
-
-<section class="social-media">
-    <a href="mailto:contactmuneeb247@gmail.com" title="Email"><i class="fa fa-envelope"></i> Email</a>
-    <a href="https://www.facebook.com/share/15g8ek713d/" title="Facebook"><i class="fa fa-facebook"></i> Facebook</a>
-    <a href="https://wa.me/03360524619" title="WhatsApp"><i class="fa fa-whatsapp"></i> WhatsApp</a>
-    <a href="https://youtube.com/@m.uneeb019?si=oaBpNJm8ApEjBctA" title="YouTube"><i class="fa fa-youtube"></i> YouTube</a>
-</section>
-
-<footer>
-    <p>&copy; 2025 Muneeb Ur Rehman. All rights reserved. | <a href="mailto:contactmuneeb247@gmail.com">Contact Me</a></p>
-</footer>
-
+    <div class="course-card" style="border-left-color: #00BCD4;">
+      <i class="fas fa-percentage"></i>
+      <h3>Statistics</h3>
+      <p>Learn data interpretation, mean, median, and probability.</p>
+    </div>
+    <div class="course-card" style="border-left-color: #9C27B0;">
+      <i class="fas fa-chart-line"></i>
+      <h3>Trigonometry</h3>
+      <p>Master sine, cosine, tangent and real-life applications.</p>
+    </div>
+  </section>  <footer>
+    <p>&copy; 2025 Muneeb Ur Rehman | Contact: contactmuneeb247@gmail.com</p>
+  </footer>
 </body>
 </html>
