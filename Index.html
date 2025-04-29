@@ -10,74 +10,85 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f4f8;
         }
 
         header {
-            background-color: #1a1a1a;
+            background-color: #283593;
             color: white;
             text-align: center;
-            padding: 50px 0;
+            padding: 80px 0;
         }
 
         header h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             margin: 0;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
         }
 
         .hero-section {
             display: flex;
             justify-content: space-between;
-            padding: 60px 5%;
-            background-color: #fff;
+            padding: 100px 5%;
+            background-color: #ffffff;
             align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .hero-section img {
-            width: 40%;
-            border-radius: 10px;
+            width: 45%;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
         }
 
         .hero-content {
-            width: 55%;
+            width: 50%;
         }
 
         .hero-content h2 {
-            font-size: 2em;
+            font-size: 2.5em;
             color: #333;
+            font-weight: 700;
         }
 
         .hero-content p {
             font-size: 1.2em;
             color: #555;
             line-height: 1.6;
+            margin-top: 20px;
         }
 
         .cta-btn {
-            background-color: #00aaff;
+            background-color: #ff4081;
             color: white;
-            padding: 12px 25px;
+            padding: 15px 30px;
             text-decoration: none;
             border-radius: 5px;
             font-size: 1.2em;
+            margin-top: 30px;
         }
 
         .cta-btn:hover {
-            background-color: #0088cc;
+            background-color: #e91e63;
         }
 
         .services-section {
             display: flex;
             justify-content: space-around;
             padding: 60px 5%;
-            background-color: #f9f9f9;
+            background-color: #f7f7f7;
         }
 
         .service-card {
             background-color: white;
             padding: 30px;
             text-align: center;
-            border-radius: 10px;
+            border-radius: 15px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             width: 30%;
         }
@@ -85,6 +96,7 @@
         .service-card h3 {
             font-size: 1.8em;
             color: #333;
+            font-weight: 600;
         }
 
         .service-card p {
@@ -93,15 +105,19 @@
         }
 
         footer {
-            background-color: #333;
+            background-color: #283593;
             color: white;
             padding: 20px 0;
             text-align: center;
         }
 
         footer a {
-            color: #00aaff;
+            color: #ff4081;
             text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -118,7 +134,8 @@
         <p>Join me for personalized online math lessons that will help you understand complex concepts in simple ways. Whether you’re preparing for exams or looking to improve your skills, I’m here to guide you every step of the way.</p>
         <a href="#services" class="cta-btn">Explore Services</a>
     </div>
-    <img src="https://via.placeholder.com/400x600?text=Male+Image" alt="Male Teacher">
+    <!-- Replace with your own image -->
+    <img src="https://via.placeholder.com/400x600?text=Male+Teacher" alt="Male Teacher">
 </section>
 
 <section class="services-section" id="services">
