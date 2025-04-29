@@ -1,134 +1,133 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Muneeb Ur Rehman - Mathematics Teacher</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muneeb Math</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffbe6;
+      color: #333;
     }
     header {
-      background-color: #FFEB3B;
-      padding: 20px 5%;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 15px 40px;
+      background: #f6c90e;
     }
-    header h1 {
-      font-size: 2em;
-      margin: 0;
-    }
-    .top-buttons {
-      display: flex;
-      gap: 15px;
-      align-items: center;
-    }
-    .top-buttons a {
-      text-decoration: none;
-      background-color: #3F51B5;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 5px;
-      font-weight: 500;
-    }
-    .top-buttons a:hover {
-      background-color: #303F9F;
-    }
-    .social-icons {
-      display: flex;
-      gap: 10px;
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
     }
     .social-icons a {
+      margin-left: 15px;
       color: #333;
-      font-size: 1.4em;
+      font-size: 20px;
+      text-decoration: none;
     }
-    .social-icons a:hover {
-      color: #3F51B5;
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: #ffde59;
     }
-    .courses-section {
-      padding: 40px 5%;
-      display: flex;
-      flex-wrap: wrap;
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
-      justify-content: space-around;
+      padding: 40px;
     }
-    .course-card {
-      flex: 0 0 30%;
-      background-color: #fff;
-      border-left: 6px solid #FFEB3B;
+    .course {
+      background: #fff;
+      border-left: 8px solid;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-    .course-card:hover {
-      transform: translateY(-5px);
-    }
-    .course-card i {
-      font-size: 2em;
+    .course i {
+      font-size: 24px;
       margin-bottom: 10px;
-      color: #3F51B5;
     }
-    .course-card h3 {
-      margin: 10px 0;
-      font-size: 1.5em;
-    }
-    .course-card p {
-      color: #555;
+    .course h3 {
+      margin: 10px 0 5px;
     }
     footer {
-      background-color: #3F51B5;
-      color: white;
+      background: #f6c90e;
+      color: #000;
+      padding: 20px;
       text-align: center;
-      padding: 20px 5%;
     }
+    footer .social-icons {
+      margin-top: 10px;
+    }
+    .border-yellow { border-color: #f6c90e; }
+    .border-blue { border-color: #3498db; }
+    .border-green { border-color: #2ecc71; }
+    .border-red { border-color: #e74c3c; }
+    .border-purple { border-color: #9b59b6; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Muneeb Ur Rehman</h1>
-    <div class="top-buttons">
-      <div class="social-icons">
-        <a href="mailto:contactmuneeb247@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.facebook.com/share/15g8ek713d/" title="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="https://wa.me/03360524619" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://youtube.com/@m.uneeb019?si=oaBpNJm8ApEjBctA" title="YouTube"><i class="fab fa-youtube"></i></a>
-      </div>
-      <a href="#login">Login</a>
-      <a href="#signup">Sign Up</a>
-    </div>
-  </header>  <section class="courses-section">
-    <div class="course-card" style="border-left-color: #FFEB3B;">
-      <i class="fas fa-square-root-alt"></i>
-      <h3>Algebra Basics</h3>
-      <p>Master variables, equations, and expressions with easy examples.</p>
-    </div>
-    <div class="course-card" style="border-left-color: #4CAF50;">
-      <i class="fas fa-calculator"></i>
-      <h3>Calculus Intro</h3>
-      <p>Understand limits, derivatives, and integrals with visual guides.</p>
-    </div>
-    <div class="course-card" style="border-left-color: #F44336;">
-      <i class="fas fa-drafting-compass"></i>
-      <h3>Geometry</h3>
-      <p>Explore shapes, angles, and theorems with simple visuals.</p>
-    </div>
-    <div class="course-card" style="border-left-color: #00BCD4;">
-      <i class="fas fa-percentage"></i>
-      <h3>Statistics</h3>
-      <p>Learn data interpretation, mean, median, and probability.</p>
-    </div>
-    <div class="course-card" style="border-left-color: #9C27B0;">
-      <i class="fas fa-chart-line"></i>
-      <h3>Trigonometry</h3>
-      <p>Master sine, cosine, tangent and real-life applications.</p>
-    </div>
-  </section>  <footer>
-    <p>&copy; 2025 Muneeb Ur Rehman | Contact: contactmuneeb247@gmail.com</p>
-  </footer>
+
+<header>
+  <div class="logo">Muneeb Math</div>
+  <div class="social-icons">
+    <a href="mailto:contactmuneeb247@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.facebook.com/share/15g8ek713d/" title="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://wa.me/923360524619" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://youtube.com/@m.uneeb019?si=oaBpNJm8ApEjBctA" title="YouTube"><i class="fab fa-youtube"></i></a>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Master Mathematics with Sir Muneeb</h1>
+  <p>Concept-Based Learning | Matric to Entry Test Preparation</p>
+</section>
+
+<section class="courses">
+  <div class="course border-yellow">
+    <i class="fas fa-square-root-alt"></i>
+    <h3>Matric Algebra</h3>
+    <p>Understand the roots, equations and factors the easy way.</p>
+  </div>
+  <div class="course border-blue">
+    <i class="fas fa-ruler-combined"></i>
+    <h3>Geometry & Trigonometry</h3>
+    <p>Clear concepts with visuals and real-life applications.</p>
+  </div>
+  <div class="course border-green">
+    <i class="fas fa-infinity"></i>
+    <h3>FSc Calculus</h3>
+    <p>Master limits, derivatives and integration techniques.</p>
+  </div>
+  <div class="course border-red">
+    <i class="fas fa-brain"></i>
+    <h3>Entry Test Math</h3>
+    <p>Prepare for MDCAT, ECAT, NUMS and more with tricks.</p>
+  </div>
+  <div class="course border-purple">
+    <i class="fas fa-laptop-code"></i>
+    <h3>Online Quizzes</h3>
+    <p>Test your skills with self-assessments and solutions.</p>
+  </div>
+</section>
+
+<footer>
+  <p>Contact: contactmuneeb247@gmail.com | WhatsApp: 0336-0524619</p>
+  <div class="social-icons">
+    <a href="mailto:contactmuneeb247@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.facebook.com/share/15g8ek713d/" title="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://wa.me/923360524619" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://youtube.com/@m.uneeb019?si=oaBpNJm8ApEjBctA" title="YouTube"><i class="fab fa-youtube"></i></a>
+  </div>
+</footer>
+
 </body>
 </html>
